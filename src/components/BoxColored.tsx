@@ -1,11 +1,10 @@
-import { useContext } from 'react'
-import { ColorContext } from '../context/colorContext'
+import { useColor } from '../hooks/colorContextHook'
 import '../styles/box.css'
 
 
 export function BoxColored(){
 
-    const {color} = useContext(ColorContext)
+    const {color} = useColor()
     
     return(
         <div className={'box ' + color}>
